@@ -1,0 +1,62 @@
+- var current = 'Home'
+ 
+doctype html   
+html(lang='en')   
+    head
+        title Sassy Pug 
+        link(rel="stylesheet" href="css/style.css")
+    body
+        include includes/_header.pug
+        main
+            h1 This is a Demo Static Site compiled using 
+                a(href="https://prepros.io/") Prepros
+                .
+                    .
+            p Built using the following:
+            ul
+                li 
+                    a(href="https://pugjs.org/") Pug
+                    . 
+                        &nbsp;for HTML
+                li 
+                    a(href="https://sass-lang.com/") SASS 
+                    .
+                        (SCSS or "Sassy CSS") for CSS
+            h3 Key Benefits:
+            ul
+                li Pug supports Includes and VAriables for templating: Note how the header, footer, and nav are all coming from seperate, imported pug files. 
+                li SASS Supports Variables and Partials for clean, modular styling. 
+
+            h3 Code Examples
+                pre
+                    code
+                        .
+                            // Sassy CSS Variables
+                            $color-accent: maroon;
+                            $color-text-light: white;
+
+                            header,
+                            footer {
+                                background: $color-accent;
+                                color: $color-text-light;
+                            }
+
+                            h1 {
+                                color: $color-accent;
+                            }
+                pre
+                    code
+                        .
+                            // Pug Templates
+                            |--dist/
+                                  |-- index.html
+                            |-- src/
+                                  |-- index.pug
+                                  |-- includes/
+                                        |-- _header.pug
+                                        |-- _footerh.pug
+                                        |-- _nav.pug
+        
+        include includes/_footer.pug
+
+    //script(src="js/script.js")   

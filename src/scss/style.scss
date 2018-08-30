@@ -1,0 +1,48 @@
+/* #VARIABLES */
+$color-link: blue;
+$color-accent: orange;
+$color-text-dark:#333;
+$color-text-light: #eee;
+$color-body-bg: #ddd;
+$spacing-unit: 1em;
+
+body {
+  margin: 0;
+  color: $color-text-dark;
+  background: $color-body-bg;
+}
+
+h1 {
+  color: $color-accent;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  &.selected {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+header,
+footer {
+  background: $color-accent;
+  padding: $spacing-unit;
+  color: $color-text-light;
+  h1,
+  a {
+    margin: 0;
+    color: $color-text-light;
+  }
+}
+
+main {
+  padding: $spacing-unit;
+}
+
+pre {
+  background: $color-text-dark;
+  color: $color-text-light;
+  padding: 2 * $spacing-unit;
+}

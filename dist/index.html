@@ -1,0 +1,69 @@
+<!DOCTYPE html   >
+<html lang="en">  
+  <head>
+    <title>Sassy Pug </title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Sassy Pug</h1>
+      <nav>
+        <ul>
+          <li><a class="selected" href="index.html">Home</a>
+          </li>
+          <li> <a href="subpage.html">Sub Page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>This is a Demo Static Site compiled using <a href="https://prepros.io/">Prepros</a>.</h1>
+      <p>Built using the following:</p>
+      <ul>
+        <li> <a href="https://pugjs.org/">Pug</a>&nbsp;for HTML</li>
+        <li> <a href="https://sass-lang.com/">SASS </a>(SCSS or "Sassy CSS") for CSS</li>
+      </ul>
+      <h3>Key Benefits:</h3>
+      <ul>
+        <li>Pug supports Includes and VAriables for templating: Note how the header, footer, and nav are all coming from seperate, imported pug files. </li>
+        <li>SASS Supports Variables and Partials for clean, modular styling. </li>
+      </ul>
+      <h3>Code Examples
+        <pre><code>// Sassy CSS Variables
+$color-accent: maroon;
+$color-text-light: white;
+
+header,
+footer {
+    background: $color-accent;
+    color: $color-text-light;
+}
+
+h1 {
+    color: $color-accent;
+}</code></pre>
+        <pre><code>// Pug Templates
+|--dist/
+      |-- index.html
+|-- src/
+      |-- index.pug
+      |-- includes/
+            |-- _header.pug
+            |-- _footerh.pug
+            |-- _nav.pug
+</code></pre>
+      </h3>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a class="selected" href="index.html">Home</a>
+          </li>
+          <li> <a href="subpage.html">Sub Page</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <!--script(src="js/script.js")   -->
+</html>
